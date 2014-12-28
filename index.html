@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <!--[if IE 8]><html class='ie8'><![endif]-->
+  <!--[if IE 9]><html class='ie9'><![endif]-->
+  <!--[if !IE]><html><![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- -定义变量 变量值也可以
+    1.直接在页面内声明变量并赋值---优先级最高 - var course ='jade study'
+    2.通过粗暴的命令行传参：jade index.jade -P -w -obj '{"course":"jade study"}'
+    3.通过json文件传参 jade index.jade -P -w -O package.json 命令
+    -->
+    <title>JADE STUDY 2---jade study</title>
+  </head>
+  <body>
+    <h2>mixin</h2>
+        <p>jade study</p>
+    <p>-------------</p>
+    <!--带参数-->
+        <p>hank</p>
+        <ul class="data">
+          <li>node</li>
+          <li>jade</li>
+          <li>express</li>
+        </ul>
+    <!--mixin嵌套-->
+        <h4>tim</h4>
+            <p>tim</p>
+            <ul class="data">
+              <li>node1</li>
+              <li>jade2</li>
+              <li>express3</li>
+            </ul><br>
+    <h2>流程</h2>
+    <h3> for each</h3>
+    <p>房产</p>
+    <p>二手房</p>
+    <h3>each
+      <p>name:房产</p>
+      <p>type:二手房</p>
+    </h3>
+    <h3>each遍历数组</h3>
+    <p>node</p>
+    <p>jade</p>
+    <p>express</p>
+    <h3>each 嵌套循环</h3>
+    <dl>
+      <dt>1</dt>
+      <dd>a</dd>
+      <dd>b</dd>
+      <dt>2</dt>
+      <dd>c</dd>
+      <dd>d</dd>
+    </dl>
+    <h3>while 循环</h3>
+    <ul>
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <h3>if else</h3>
+    <p>more than 1: jade,node</p><br>
+    <h3>unless</h3>
+    <p>2--unless</p><br>
+    <h3>case</h3>
+    <p>hi jade</p>
+    <h2>转义</h2>
+    <p>text</p>
+    <p>&lt;script&gt;alert(1);&lt;/script&gt;</p>
+    <p><script>alert(1);</script></p>
+    <p>text</p>
+    <p>&lt;script&gt;alert(1);&lt;/script&gt;</p>
+    <p><script>alert(1);</script></p>
+    <p>#{htmldata}</p>
+    <p>!\{htmldata}</p>
+  </body>
+  <h2>文档声明和头尾标签
+    <h2>标签语法</h2>
+    <section>
+      <div>
+        <ul>
+          <p></p>
+        </ul>
+      </div>
+    </section>
+    <h2>元素属性</h2>
+    <div id="id" class="class1 class2"></div>
+    <input type="text" placeholder="jade study 2">
+    <input value="jade study">
+    <div>JADE STUDY</div>
+    <input checked>
+    <h2>注释</h2>
+    <h3>单行注释 可在源码里出现注释</h3>
+    <!--样式和id可以直接在元素后.classname#idname-->
+    <h1 id="title" class="title title3">jade study test</h1>
+    <h3>非缓冲注释
+    </h3>
+    <div id="id" class="classname"></div>
+    <h3>块注释</h3>
+    <h3>元素的值，文本</h3>
+    <p></p><a href="http://www.hangblog.net" title="jade study" data-uid="1000"></a>
+    <input name="course" type="text" value="jade">
+    <input name="type" type="checkbox" checked>
+    <p>1.aa<strong>11</strong>2.bb
+      3.c
+    </p>
+  </h2>
+</html>
