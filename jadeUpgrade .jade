@@ -1,6 +1,13 @@
-doctype
-html
-   head
-      meta(charset='utf-8')
-      title jade 进级篇
-   body
+extends layout
+block content
+block house
+    h2 该block house会替换layout继承过来的house模块
+    p desc from jadeUpgrade
+
+    h2 导入style.jade样式
+    include css/style
+        //对引入的style追加样式
+        style.
+             h3{color:chartreuse;}
+    h2 导入静态的html文件模块
+    include title.html
