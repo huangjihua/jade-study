@@ -1,5 +1,6 @@
 extends layout
 block content
+
 block house
     h2 该block house会替换layout继承过来的house模块
     p desc from jadeUpgrade
@@ -11,3 +12,17 @@ block house
              h3{color:chartreuse;}
     h2 导入静态的html文件模块
     include title.html
+    h3 markdown
+    :markdown
+        Hi, this is **markdown** [link](http://www.hankblog.net)
+    h3 less
+
+    //style
+    //   :less
+    //      body{
+    //        p{color:#ccc;}
+    //       }
+    h3 coffee
+    script
+      :coffee
+        console.log 'this is Coffee!'
